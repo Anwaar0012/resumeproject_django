@@ -1,0 +1,22 @@
+{% extends 'core/base.html'%}
+{% load static %}
+{% block content %}
+
+<div class=" mt-5">
+    <div class="text-center">
+        <img src="{% static 'core/images/pic1.jpg'%}" alt="profile picture" class="image-thumbnail" width="250px"
+        height="150px">
+    </div>
+        <div class="mt-2 text-white mx-5 text-justify">
+            <h1 class="font-weight-bold text-white satisfy-regular">Hello,</h1>
+            <div class="px-4 satisfy-regular" style="line-height: 2rem;">
+                <p style="text-indent: 100px;">I am <b class="text-warning">Muhammad Anwaar </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sequi, quam laboriosam eaque quos molestias quia accusantium neque autem amet numquam obcaecati, illo, quaerat quibusdam animi. Iste deserunt impedit nam voluptatum illum eligendi possimus officiis libero at totam alias ullam eveniet corrupti amet quisquam inventore commodi illo quos eum, sed nobis odit? Quasi inventore maxime ullam eligendi quae illo nam omnis vero quibusdam beatae similique laudantium sapiente natus distinctio, molestias recusandae ea deserunt, sunt, adipisci saepe.</p>
+                <p style="text-indent: 100px;">I am <b class="text-warning">Teacher </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sequi, quam laboriosam eaque quos molestias quia accusantium neque autem amet numquam obcaecati, illo, quaerat quibusdam animi. Iste deserunt impedit nam voluptatum illum eligendi possimus officiis libero at totam alias ullam eveniet corrupti amet quisquam inventore commodi illo quos eum, sed nobis odit? Quasi inventore maxime ullam eligendi quae illo nam omnis vero quibusdam beatae similique laudantium sapiente natus distinctio, molestias recusandae ea deserunt, sunt, adipisci saepe.</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a class="btn btn-outline-warning mr-5 my-3" href="{% url 'contact'%}">Hire Me</a>
+            <a class="btn btn-outline-info my-3" href="{% url 'contact'%}">Contact</a>
+        </div>
+</div>
+{% endblock content %}
